@@ -30,4 +30,10 @@ func main() {
 
     var int_no_value int
     fmt.Println(int_no_value)
+
+    const my_constant = 100
+    fmt.Println("My constant: %s", my_constant)
+
+    my_constant = "trying to change my constant"
+    fmt.Println("My constant: %s", my_constant)
 }
