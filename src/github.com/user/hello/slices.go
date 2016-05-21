@@ -16,9 +16,9 @@ func main() {
     my_slice = append(my_slice, my_other_nested_slice)
     fmt.Println(my_slice)
 
-    my_int_slice := make([]int, 0)
+    my_int_slice := make([]int, 10)
     for i := 0; i < 10; i++ {
-        my_int_slice = append(my_int_slice, i + 1)
+        my_int_slice[i] = i + 1
     }
 
     fmt.Println(my_int_slice)
