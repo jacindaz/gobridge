@@ -18,4 +18,9 @@ func main() {
     fmt.Printf("\nPrintf string interpolation of a boolean: %t", true_true)
     fmt.Printf("\nPrintf string interpolation of a boolean: %v", false_false)
 
+    string_short_var := "short variable"
+    fmt.Printf("\n\n%v", string_short_var)
+
+    boolean_short_var := true
+    fmt.Printf("\nboolean short var: %t", boolean_short_var)
 }
