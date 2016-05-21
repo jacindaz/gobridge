@@ -3,15 +3,10 @@ package main
 import "fmt"
 
 func main() {
-    for i := 0; i <= 3; i++ {
-        var my_string = fmt.Sprintf("verbose for loop: %d", i)
-        fmt.Println(my_string)
-    }
-
-    j := 0
-    for j <= 3 {
-        var my_string = fmt.Sprintf("single condition for loop: %d", j)
-        fmt.Println(my_string)
-        j++
+    if num := 9; num == 9 {
+        fmt.Println("if statement")
+        fmt.Printf("this is weird that i can set a variable in the if condition")
+    } else {
+        fmt.Println("else statement")
     }
 }
