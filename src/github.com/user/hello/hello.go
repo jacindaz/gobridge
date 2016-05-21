@@ -23,4 +23,11 @@ func main() {
 
     boolean_short_var := true
     fmt.Printf("\nboolean short var: %t", boolean_short_var)
+
+    var boolean_no_value bool
+    fmt.Println("\n")
+    fmt.Println(boolean_no_value)
+
+    var int_no_value int
+    fmt.Println(int_no_value)
 }
