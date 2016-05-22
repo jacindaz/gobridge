@@ -14,4 +14,14 @@ func main() {
             fmt.Printf("odd")
         }
     }
+
+    range_for_a_map()
+}
+
+func range_for_a_map() {
+    my_map := map[string]string{"a": "apple", "b": "banana"}
+    for k,v := range my_map {
+        fmt.Printf("\nkey: %s", k)
+        fmt.Printf("\nkey: %s", v)
+    }
 }
