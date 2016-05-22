@@ -4,7 +4,7 @@ import "reflect"
 
 func main() {
     x := 5
-    x_ptr := &x
+    x_ptr := &x // making a pointer to the memory address where the value 5 is stored
 
     y := "string"
     y_ptr := &y
@@ -34,9 +34,14 @@ func zeroptr(iptr *int) {
 
 func go_by_example_pointer_code() {
     i := 1
-    fmt.Println("initial for i:", i)
+    fmt.Println("\ninitial for i:", i)
     zeroval(i)
+
+    // this value is 1, because inside the zeroval method, ival is locally scoped,
+    // so outside of the function, this value is not assigned to 0 anymore
     fmt.Println("zeroval for i:", i)
+    // => i is 0
+
     zeroptr(&i)
     fmt.Println("zeroptr for i:", i)
     fmt.Println("pointer for i:", &i)
